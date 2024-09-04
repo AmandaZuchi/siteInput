@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de Post | Firebase</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <form id="postForm">
+            <div class="alert" style="display: none;">Seu post foi enviado!</div>
+
+            <div class="inputBox">
+                <input type="text" id="titulo" placeholder="Título..." required />
+            </div>
+
+            <div class="inputBoxMenor">
+                <textarea id="objetivo" cols="30" rows="10" placeholder="Objetivo do estudo" required></textarea>
+            </div>
+
+            <div class="inputBoxMenor">
+                <textarea id="metodo" cols="30" rows="10" placeholder="Método" required></textarea>
+            </div>
+
+            <div class="inputBox">
+                <textarea id="conteudo" cols="30" rows="10" placeholder="Resultado" required></textarea>
+            </div>
+            <div class="inputBoxMenor">
+                <textarea id="conclusao" cols="30" rows="10" placeholder="Conclusão" required></textarea>
+            </div>
+
+            <div class="inputBox">
+                <input type="text" id="id" placeholder="ID do Post" required />
+            </div>
+
+            <div class="inputBox">
+                <input type="text" id="categoria" placeholder="Categoria..." required />
+            </div>
+            <div class="inputBox">
+                <input type="text" id="subcategoria" placeholder="Subcategoria..." required />
+            </div>
+
+            <div class="inputBox">
+                <input type="text" id="autor" placeholder="Autor..." required />
+            </div>
+            <div class="inputBox">
+                <input type="text" id="data" placeholder="Data" required />
+            </div>
+
+            <div class="inputBox">
+                <input type="url" id="imageURL" name="imageURL" placeholder="URL da Imagem de capa do post:" required />
+            </div>
+
+            <div class="inputBox">
+                <input type="text" id="fontIMGcapa" name="fontIMGcapa" placeholder="Fonte da foto de capa" required />
+            </div>
+
+            <div class="inputBox">
+                <input type="url" id="imagem" name="imagem" placeholder="URL da Imagem:" required />
+            </div>
+
+            <div class="inputBox">
+                <input type="text" id="fontIMG" name="fontIMG" placeholder="Fonte da Segunda imagem" required />
+            </div>
+
+            <div class="inputBox">
+                <input type="url" id="linkdoartigo" name="linkdoartigo" placeholder="URL do artigo:" required />
+            </div>
+
+            <div class="inputBox">
+                <input type="text" id="palavra1" placeholder="Glossário" />
+            </div>
+
+            <div class="inputBox">
+                <input type="text" id="significado1" placeholder="Significado" />
+            </div>
+
+            <div class="inputBox">
+                <input type="text" id="palavra2" placeholder="Glossário" />
+            </div>
+
+            <div class="inputBox">
+                <input type="text" id="significado2" placeholder="Significado" />
+            </div>
+
+            <div class="inputBox">
+                <input type="text" id="palavra3" placeholder="Glossário" />
+            </div>
+
+            <div class="inputBox">
+                <input type="text" id="significado3" placeholder="Significado" />
+            </div>
+
+            <div class="inputBox">
+                <input type="text" id="palavra4" placeholder="Glossário" />
+            </div>
+
+            <div class="inputBox">
+                <input type="text" id="significado4" placeholder="Significado" />
+            </div>
+
+            <div class="inputBox">
+                <input type="text" id="palavra5" placeholder="Glossário" />
+            </div>
+
+            <div class="inputBox">
+                <input type="text" id="significado5" placeholder="Significado" />
+            </div>
+
+            <div class="inputBox">
+                <input type="text" id="palavra6" placeholder="Glossário" />
+            </div>
+
+            <div class="inputBox">
+                <input type="text" id="significado6" placeholder="Significado" />
+            </div>
+
+            <div class="inputBox">
+                <button type="submit">Enviar</button>
+            </div>
+        </form>
+    </div>
+
+    <!-- Firebase SDK -->
+    <script src="https://www.gstatic.com/firebasejs/7.14.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.14.1/firebase-firestore.js"></script>
+    <!-- Script de configuração do Firebase -->
+    <script src="./mail.js"></script>
+</body>
+
+</html>
