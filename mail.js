@@ -1,13 +1,16 @@
 // Configuração do Firebase
-const firebaseConfig = {
-  apiKey: "AIzaSyDrX6of1-zwrkKhVn_BgvpuI60B-on1NXU",
-  authDomain: "tcc-tristeza.firebaseapp.com",
-  projectId: "tcc-tristeza",
-  storageBucket: "tcc-tristeza.appspot.com",
-  messagingSenderId: "759063625741",
-  appId: "1:759063625741:web:16081f432e45cedd791544",
-  measurementId: "G-V3WVR8VZCD"
+
+  const firebaseConfig = {
+  apiKey: "******",
+  authDomain: ""******",",
+  projectId: ""******",",
+  storageBucket: ""******",",
+  messagingSenderId: ""******",",
+  appId: ""******",",
+  measurementId: ""******"," 
 };
+
+
 
 // Inicializar Firebase
 firebase.initializeApp(firebaseConfig);
